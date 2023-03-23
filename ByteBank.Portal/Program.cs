@@ -1,7 +1,6 @@
-﻿using ByteBank.Portal.Infraestrutura
+﻿
+using ByteBank.Portal.Infraestrutura;
 
-void Main(string[] args)
-{
-    var webApplication = new WebApplication();
-    WebApplication.Iniciar();
-}
+var prefixos = new string[] { "http://localhost:5341/" };
+var webApplication = new WebApplication(prefixos);
+webApplication.Iniciar();
